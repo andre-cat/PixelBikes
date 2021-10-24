@@ -1,2 +1,2 @@
 # Pixel_Bikes
- A simple game with language C# developed on Unity which reference is the NES game ExciteBike (1984).
+ A simple videogame on Unity (C#) which reference is the NES game Excitebike (1984).
