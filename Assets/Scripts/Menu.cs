@@ -10,13 +10,18 @@ public class Menu : MonoBehaviour
 
     public void exit()
     {
-        Debug.Log("EXIT!!!");
+        Debug.Log("¡SALIR!");
         Application.Quit();
     }
 
     public void options()
     {
         SceneManager.LoadScene("options_menu");
+    }
+
+     public void avatar()
+    {
+        SceneManager.LoadScene("avatar_menu");
     }
 
     public void back()
