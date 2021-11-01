@@ -3,29 +3,29 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public void play()
+    public void jugar()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void exit()
+    public void salir()
     {
         Debug.Log("¡SALIR!");
         Application.Quit();
     }
 
-    public void options()
+    public void opciones()
     {
-        SceneManager.LoadScene("options_menu");
+        SceneManager.LoadScene("Opciones");
     }
 
      public void avatar()
     {
-        SceneManager.LoadScene("avatar_menu");
+        SceneManager.LoadScene("");
     }
 
-    public void back()
+    public void volver()
     {
-        SceneManager.LoadScene("main_menu");
+        SceneManager.LoadScene("MenuPrincipal");
     }
 }
