@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f827cbc3cdd3bc84db8196d81928222b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barra: {fileID: 0}
+  vida: {fileID: 0}
   puntaje: {fileID: 0}
 --- !u!114 &554879800
 MonoBehaviour:

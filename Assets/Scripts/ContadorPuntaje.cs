@@ -3,15 +3,18 @@ using TMPro;
 
 public class ContadorPuntaje : MonoBehaviour
 {
-
    public TMP_Text texto;
 
-    public void ConfigurarTexto(int puntaje)
+   private void Awake(){
+       texto = GetComponent<TextMeshProUGUI>();
+   }
+
+    public void configurar_texto(int puntaje)
     {
         texto.text = puntaje.ToString();
     }
 
-    public void ConfigurarTextoInicial()
+    public void configurar_texto_inicial()
     {
         texto.text = "0";
     }

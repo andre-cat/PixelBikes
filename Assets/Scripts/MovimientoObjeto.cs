@@ -12,7 +12,11 @@ public class MovimientoObjeto : MonoBehaviour
 
     private void Update()
     {
-        Vector2 dirección = new Vector2(-1,0);
-        objeto.velocity = dirección * velocidad * Time.deltaTime * Controlador.factor();
+        if (Controlador.vida > 0)
+        {
+            Vector2 dirección = new Vector2(-1, 0);
+            objeto.velocity = dirección * velocidad * Time.deltaTime * Controlador.factor();
+        }
+
     }
 }

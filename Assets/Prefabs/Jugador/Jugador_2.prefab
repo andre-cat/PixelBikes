@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f827cbc3cdd3bc84db8196d81928222b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barra: {fileID: 0}
+  vida: {fileID: 0}
   puntaje: {fileID: 0}
 --- !u!114 &3032065589880311034
 MonoBehaviour:
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613acd3f902c73d44aca84b31f4b21cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto: {fileID: 113004, guid: fed590536cb27604d9e030f1a79ccbae, type: 3}
+  objeto: {fileID: 8818094674709410300, guid: 26739729ffa33d04f948e68ab328a822, type: 3}
   punto: {fileID: 1391649301575830934}
   "duraci\xF3n": 0
 --- !u!50 &3032065590189307321

@@ -10,8 +10,12 @@ TagManager:
   - Destructible-Ofensivo
   - Rampa
   - Roca
-  - Undefined
   - "Lim\xF3n"
+  - Vida
+  - Puntaje
+  - Punto
+  - Fondo
+  - Enemigo
   layers:
   - Default
   - TransparentFX

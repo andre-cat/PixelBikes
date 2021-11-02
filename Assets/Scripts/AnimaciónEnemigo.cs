@@ -17,10 +17,10 @@ public class AnimaciónEnemigo : MonoBehaviour
     {
         animador.SetFloat("x", transform.position.x);
 
-		if (Controlador.cantidad == 0)
+		/*if ()
 		{
             GameObject roca_gigante = Instantiate(roca, punto.transform.position, Quaternion.identity);
-        }
+        }*/
     }
 
     private void OnCollisionEnter2D(Collision2D colisión)

@@ -8,24 +8,29 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void salir()
+   public void avatar()
     {
-        Debug.Log("¡SALIR!");
-        Application.Quit();
+        SceneManager.LoadScene("AVATAR");
+    }
+
+       public void tienda()
+    {
+        SceneManager.LoadScene("TIENDA");
     }
 
     public void opciones()
     {
-        SceneManager.LoadScene("Opciones");
-    }
-
-     public void avatar()
-    {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("OPCIONES");
     }
 
     public void volver()
     {
-        SceneManager.LoadScene("MenuPrincipal");
+        SceneManager.LoadScene("MENU");
+    }
+
+     public void salir()
+    {
+        Debug.Log("¡SALIR!");
+        Application.Quit();
     }
 }

@@ -7,7 +7,7 @@ public class Destruible : MonoBehaviour
         if (colisión.gameObject.tag == "Player")
         {
             Animator animador = GetComponent<Animator>();
-                animador.SetTrigger("Choque");
+                animador.SetBool("Choque",true);
         }
     }
 }
