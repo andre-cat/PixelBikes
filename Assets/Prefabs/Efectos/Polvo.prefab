@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7994468140202188323}
   - component: {fileID: 7994468140202188324}
   m_Layer: 0
-  m_Name: Arena
+  m_Name: Polvo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

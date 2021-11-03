@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class CrearObjeto : MonoBehaviour
+public class Crear : MonoBehaviour
 {
 
     public GameObject objeto;
-    public GameObject punto;
+    public Transform punto;
     public float duración;
 
     void crear()
     {
-        GameObject instanciado = Instantiate(objeto, punto.transform.position, Quaternion.identity);
+        GameObject instanciado = Instantiate(objeto, punto.position, Quaternion.identity);
 
         if (duración > 0)
         {

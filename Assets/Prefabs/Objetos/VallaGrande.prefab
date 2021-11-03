@@ -9,16 +9,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4750232924983112274}
-  - component: {fileID: 4750232924983112272}
   - component: {fileID: 4638210500490288798}
   - component: {fileID: 1348519028356097581}
-  - component: {fileID: 5093335447455871159}
+  - component: {fileID: 4750232924983112272}
   - component: {fileID: -4875142257114979741}
   - component: {fileID: -996452910555470438}
+  - component: {fileID: 5093335447455871159}
   m_Layer: 0
   m_Name: VallaGrande
   m_TagString: Destructible-Inofensivo
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -38,25 +38,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4750232924983112272
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4750232924983112273}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 89a0a2aa21a6f804ebf14d586b0ea291, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &4638210500490288798
 Rigidbody2D:
   serializedVersion: 4
@@ -94,12 +75,56 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -10.359364, y: -40.56855}
-  - {x: 17.120789, y: 27.947222}
+  - {x: -10.989233, y: -27.762367}
+  - {x: 16.847029, y: 44.16015}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!95 &4750232924983112272
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4750232924983112273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89a0a2aa21a6f804ebf14d586b0ea291, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-4875142257114979741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4750232924983112273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05811b7aa74b0be4698c58ff728c5042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 7000
+--- !u!114 &-996452910555470438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4750232924983112273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180075d78ef26fd47a8218764183356b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5093335447455871159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,32 +138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objeto: {fileID: 4798920386814185602, guid: 14db2c444643c5c40bf61af3bbe8db26, type: 3}
-  punto: {fileID: 6337550388542590966}
+  punto: {fileID: 1793648104124767313}
   "duraci\xF3n": 0.5
---- !u!114 &-4875142257114979741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4750232924983112273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05811b7aa74b0be4698c58ff728c5042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-996452910555470438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4750232924983112273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 180075d78ef26fd47a8218764183356b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5847193583729390896
 GameObject:
   m_ObjectHideFlags: 0

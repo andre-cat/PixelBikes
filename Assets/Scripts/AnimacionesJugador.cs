@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AnimacionesJugador : MonoBehaviour
@@ -13,7 +12,6 @@ public class AnimacionesJugador : MonoBehaviour
 
     private Image fondo;
     private float tiempo_inicial;
-    private bool una_vez = false;
 
     void Awake()
     {
@@ -42,8 +40,8 @@ public class AnimacionesJugador : MonoBehaviour
 
     private void animaciones_arriba_abajo()
     {
-        animador.SetBool("Arriba", Input.GetKey("up"));
-        animador.SetBool("Abajo", Input.GetKey("down"));
+        animador.SetBool("Subir", Input.GetKey("up"));
+        animador.SetBool("Bajar", Input.GetKey("down"));
     }
 
     private void daño(int valor_daño)
@@ -59,21 +57,21 @@ public class AnimacionesJugador : MonoBehaviour
                 Controlador.limon++;
                 break;
             case "Destructible-Ofensivo":
-                if (colisión.name != "Barril")
+                if (colisión.name == "Barril")
                 {
                     animador.SetTrigger("Resbalar");
-                    animador_enemigo.SetTrigger("Choque");
+                    animador_enemigo.SetTrigger("Risa");
                     daño(20);
                 }
                 else
                 {
-                    animador.Play("Contacto");
+                    animador.SetTrigger("Contacto");
                     daño(5);
                 }
                 break;
             case "Indestructible-Ofensivo":
                 animador.SetTrigger("Resbalar");
-                animador_enemigo.SetTrigger("Choque");
+                animador_enemigo.SetTrigger("Risa");
                 daño(10);
                 break;
             case "Rampa":

@@ -3,9 +3,9 @@ using UnityEngine;
 public class Piscina : MonoBehaviour
 {
     public GameObject prefab;
-    public int cantidad = 5;
+    public int cantidad = 3;
     public int instanciados = 1;
-    public float tiempo = 5;
+    public float tiempo = 15;
     public int layer;
 
     private void Start()
@@ -49,6 +49,7 @@ public class Piscina : MonoBehaviour
 
         objeto.transform.position = this.transform.position;
         objeto.SetActive(true);
+        objeto.GetComponentInChildren<SpriteRenderer>().sortingOrder = layer;
         return objeto;
     }
 

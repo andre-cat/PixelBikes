@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c80650ba9ceff448114e358226c721, type: 3}
+  m_Name: "Obst\xE1culos"
+  m_EditorClassIdentifier: 
+  "obst\xE1culo":
+  - {fileID: 4952927628942061351, guid: 468854acb6043f842977d1294e138733, type: 3}
+  - {fileID: 1056217895511968548, guid: bd3026ad3f2a9294ba8d5ecf083d1b41, type: 3}
+  - {fileID: 7440373352499850084, guid: 52b869b1b425bc34ca1973d5be31dd59, type: 3}
+  - {fileID: 826714813585841513, guid: 035dc93839d573f49b910ccb66c92b72, type: 3}
+  - {fileID: 6106751242704091651, guid: 478e7f8b33cda65469ee0e1f61e2e24a, type: 3}
+  - {fileID: 6403083637560611310, guid: 932e264a614e71e4a866bc6d0682828e, type: 3}
+  - {fileID: 6577938104635409436, guid: ef0a6bd447b1b8c46a05a72c6e1aface, type: 3}
+  - {fileID: 4750232924983112273, guid: 1dcdb8b10341d6646b58fd79912896cc, type: 3}
+  - {fileID: 2039957289709558131, guid: 82f04a02b5874d04aa3071b3603a0adb, type: 3}

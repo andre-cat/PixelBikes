@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Frenar
+  m_Name: Bajar_3
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,16 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300038, guid: ec5f10656b18add4aa96578fb40b7b01, type: 3}
+      value: {fileID: -7706228151943146048, guid: d0e1b93bd62506f46bd8b4f93b0f3b31,
+        type: 3}
     - time: 0.016666668
-      value: {fileID: 21300050, guid: ec5f10656b18add4aa96578fb40b7b01, type: 3}
+      value: {fileID: 5551839178285388235, guid: d0e1b93bd62506f46bd8b4f93b0f3b31,
+        type: 3}
+    - time: 0.033333335
+      value: {fileID: -5284023744326265232, guid: d0e1b93bd62506f46bd8b4f93b0f3b31,
+        type: 3}
     attribute: m_Sprite
-    path: 
+    path: Imagen
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -35,21 +40,22 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 2226509701
       attribute: 0
       script: {fileID: 0}
       typeID: 212
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300038, guid: ec5f10656b18add4aa96578fb40b7b01, type: 3}
-    - {fileID: 21300050, guid: ec5f10656b18add4aa96578fb40b7b01, type: 3}
+    - {fileID: -7706228151943146048, guid: d0e1b93bd62506f46bd8b4f93b0f3b31, type: 3}
+    - {fileID: 5551839178285388235, guid: d0e1b93bd62506f46bd8b4f93b0f3b31, type: 3}
+    - {fileID: -5284023744326265232, guid: d0e1b93bd62506f46bd8b4f93b0f3b31, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.033333335
+    m_StopTime: 0.050000004
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -9,16 +9,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2039957289709558140}
-  - component: {fileID: 2039957289709558130}
   - component: {fileID: 3906342272138366915}
   - component: {fileID: 1689576299243391851}
-  - component: {fileID: 6436981318905137225}
+  - component: {fileID: 2039957289709558130}
   - component: {fileID: 5533627408156601228}
   - component: {fileID: 7827696253209672853}
+  - component: {fileID: 6436981318905137225}
   m_Layer: 0
   m_Name: "VallaPeque\xF1a"
   m_TagString: Destructible-Inofensivo
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -38,25 +38,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2039957289709558130
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039957289709558131}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8af2dedbbc8e80148b3a1a08bda877d6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &3906342272138366915
 Rigidbody2D:
   serializedVersion: 4
@@ -100,6 +81,50 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!95 &2039957289709558130
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039957289709558131}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8af2dedbbc8e80148b3a1a08bda877d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5533627408156601228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039957289709558131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05811b7aa74b0be4698c58ff728c5042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 7000
+--- !u!114 &7827696253209672853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039957289709558131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180075d78ef26fd47a8218764183356b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6436981318905137225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,32 +138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objeto: {fileID: 4798920386814185602, guid: 14db2c444643c5c40bf61af3bbe8db26, type: 3}
-  punto: {fileID: 5939257924260999793}
+  punto: {fileID: 3037844313510722178}
   "duraci\xF3n": 0.5
---- !u!114 &5533627408156601228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039957289709558131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05811b7aa74b0be4698c58ff728c5042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7827696253209672853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039957289709558131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 180075d78ef26fd47a8218764183356b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3234702177132268487
 GameObject:
   m_ObjectHideFlags: 0

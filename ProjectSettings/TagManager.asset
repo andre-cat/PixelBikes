@@ -13,9 +13,8 @@ TagManager:
   - "Lim\xF3n"
   - Vida
   - Puntaje
-  - Punto
-  - Fondo
   - Enemigo
+  - Bicicleta
   layers:
   - Default
   - TransparentFX
@@ -23,7 +22,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Elementos
   - 
   - 
   - 

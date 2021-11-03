@@ -3,7 +3,11 @@ guid: ace5e73411b6f3e4a98a27814570f7e1
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - personajes: {instanceID: 0}
+  - avatar: {instanceID: 0}
+  - nombre: {instanceID: 0}
+  - objeto: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
