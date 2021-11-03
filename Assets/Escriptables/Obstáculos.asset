@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0c80650ba9ceff448114e358226c721, type: 3}
+  m_Script: {fileID: 11500000, guid: d68130b6f0f33a240839089053dab55e, type: 3}
   m_Name: "Obst\xE1culos"
   m_EditorClassIdentifier: 
-  "obst\xE1culo":
+  contenedor:
   - {fileID: 4952927628942061351, guid: 468854acb6043f842977d1294e138733, type: 3}
   - {fileID: 1056217895511968548, guid: bd3026ad3f2a9294ba8d5ecf083d1b41, type: 3}
   - {fileID: 7440373352499850084, guid: 52b869b1b425bc34ca1973d5be31dd59, type: 3}
