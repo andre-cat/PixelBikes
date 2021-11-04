@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class AnimacionesJugador : MonoBehaviour
 {
 
-    public BarraVida vida;
-    public ContadorPuntaje puntaje;
+    public BarraVida barra_vida;
+    public ContadorPuntaje contador_puntaje;
 
     private Animator animador;
     private Animator animador_enemigo;
@@ -15,8 +15,8 @@ public class AnimacionesJugador : MonoBehaviour
 
     void Awake()
     {
-        vida = GameObject.FindWithTag("Vida").GetComponent<BarraVida>();
-        puntaje = GameObject.FindWithTag("Puntaje").GetComponent<ContadorPuntaje>();
+        barra_vida = GameObject.FindWithTag("Vida").GetComponent<BarraVida>();
+        contador_puntaje = GameObject.FindWithTag("Puntaje").GetComponent<ContadorPuntaje>();
 
         animador = GetComponent<Animator>();
         animador_enemigo = GameObject.FindWithTag("Enemigo").GetComponent<Animator>();
@@ -24,18 +24,17 @@ public class AnimacionesJugador : MonoBehaviour
 
     private void Start()
     {
-        vida.configurar_vida_inicial();
-        puntaje.configurar_texto_inicial();
+        PlayerPrefs.GetInt("vida", 100);
+        PlayerPrefs.GetInt("limones", 0);
+        barra_vida.configurar_vida_inicial();
+        contador_puntaje.configurar_texto_inicial();
     }
 
     void Update()
     {
         animaciones_arriba_abajo();
-        vida.configurar_vida(Controlador.vida);
-        puntaje.configurar_texto(Controlador.limon);
-        if (Controlador.vida <= 0)
-        {
-        }
+        barra_vida.configurar_vida(PlayerPrefs.GetInt("vida"));
+        contador_puntaje.configurar_texto(PlayerPrefs.GetInt("limones"));
     }
 
     private void animaciones_arriba_abajo()
@@ -46,7 +45,9 @@ public class AnimacionesJugador : MonoBehaviour
 
     private void daño(int valor_daño)
     {
-        Controlador.vida = Controlador.vida - valor_daño;
+        int vida = PlayerPrefs.GetInt("vida");
+        vida -= valor_daño;
+        PlayerPrefs.SetInt("vida", vida);
     }
 
     private void OnTriggerEnter2D(Collider2D colisión)
@@ -54,7 +55,9 @@ public class AnimacionesJugador : MonoBehaviour
         switch (colisión.tag)
         {
             case "Limón":
-                Controlador.limon++;
+                int limones = PlayerPrefs.GetInt("limones");
+                limones++;
+                PlayerPrefs.SetInt("limones", limones);
                 break;
             case "Destructible-Ofensivo":
                 if (colisión.name == "Barril")

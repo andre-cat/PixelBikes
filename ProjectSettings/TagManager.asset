@@ -14,10 +14,6 @@ TagManager:
   - Vida
   - Puntaje
   - Enemigo
-  - Bicicleta
-  - 1
-  - 2
-  - 3
   layers:
   - Default
   - TransparentFX

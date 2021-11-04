@@ -93,8 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3714521403608918141}
   - component: {fileID: 8648568265301566495}
-  - component: {fileID: 2250836001462506480}
-  - component: {fileID: 958155696082147434}
+  - component: {fileID: 1211049875}
   - component: {fileID: 8648568265057867363}
   - component: {fileID: 3714521403608918143}
   - component: {fileID: 3714521403608918140}
@@ -144,11 +143,11 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 0
+  m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!68 &2250836001462506480
-EdgeCollider2D:
+--- !u!58 &1211049875
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -160,52 +159,9 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 11.996064, y: -18.02013}
-  - {x: 12.020552, y: -17.00874}
-  - {x: 13.991471, y: -16.9901}
-  - {x: 13.994238, y: -16.010508}
-  - {x: 15.008643, y: -16.002516}
-  - {x: 14.999886, y: -15.001397}
-  - {x: 15.979102, y: -14.998338}
-  - {x: 15.988232, y: -12.997812}
-  - {x: 16.816765, y: -12.9972725}
-  - {x: 16.999289, y: -12.99716}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!68 &958155696082147434
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3714521403608918136}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -13.987911, y: -12.997634}
-  - {x: -12.994907, y: -13.010614}
-  - {x: -12.994802, y: -15.011271}
-  - {x: -11.9983835, y: -15.009793}
-  - {x: -12.004338, y: -16.009743}
-  - {x: -10.990938, y: -16.01838}
-  - {x: -10.995748, y: -17.014153}
-  - {x: -9.011032, y: -17.020975}
-  - {x: -9.018689, y: -18.006914}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+  m_Offset: {x: 12, y: -13.647766}
+  serializedVersion: 2
+  m_Radius: 3.8154888
 --- !u!95 &8648568265057867363
 Animator:
   serializedVersion: 3

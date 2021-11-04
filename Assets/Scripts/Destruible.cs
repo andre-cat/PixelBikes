@@ -27,10 +27,9 @@ public class Destruible : MonoBehaviour
     {
         if (transform.position.x + GetComponentInChildren<SpriteRenderer>().bounds.size.x < Camera.main.ScreenToWorldPoint(Vector2.zero).x)
         {
-            if (gameObject.tag != "AceiteGrande" & gameObject.tag != "AceitePequeño")
+            if (gameObject.name != "AceiteGrande" & gameObject.name != "AceitePequeño")
             {
-             Animator animador = GetComponent<Animator>();
-                animador.SetBool("Choque", false);
+                GetComponent<Animator>().SetBool("Choque", false);
             }
         }
     }

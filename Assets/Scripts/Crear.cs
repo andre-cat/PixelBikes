@@ -9,7 +9,7 @@ public class Crear : MonoBehaviour
 
     void crear()
     {
-        GameObject instanciado = Instantiate(objeto, punto.position, Quaternion.identity);
+        GameObject instanciado = Instantiate(objeto, punto.position, Quaternion.identity, this.transform);
 
         if (duración > 0)
         {
