@@ -9,11 +9,13 @@ TagManager:
   - Destructible-Inofensivo
   - Destructible-Ofensivo
   - Rampa
-  - Roca
   - "Lim\xF3n"
-  - Vida
-  - Puntaje
   - Enemigo
+  - Roca
+  - "Obst\xE1culos"
+  - Limones
+  - Cubierta
+  - Progreso
   layers:
   - Default
   - TransparentFX

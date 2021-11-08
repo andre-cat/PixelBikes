@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - personajes: {instanceID: 0}
+  - personajes: {fileID: 11400000, guid: 5c4a6b5e5bef47841b02c56ab2a1dabe, type: 2}
   - avatar: {instanceID: 0}
   - nombre: {instanceID: 0}
   - objeto: {instanceID: 0}

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Destruible : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D colisión)
+    void OnTriggerEnter2D(Collider2D colisión)
     {
         Animator animador = GetComponent<Animator>();
         if (colisión.gameObject.tag == "Player")
@@ -18,19 +18,19 @@ public class Destruible : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
-        reiniciar();
+        if (transform.position.x + GetComponentInChildren<SpriteRenderer>().bounds.size.x < Camera.main.ScreenToWorldPoint(Vector2.zero).x)
+        {
+            reiniciar();
+        }
     }
 
     private void reiniciar()
     {
-        if (transform.position.x + GetComponentInChildren<SpriteRenderer>().bounds.size.x < Camera.main.ScreenToWorldPoint(Vector2.zero).x)
+        if (gameObject.name != "AceiteGrande" & gameObject.name != "AceitePequeño")
         {
-            if (gameObject.name != "AceiteGrande" & gameObject.name != "AceitePequeño")
-            {
-                GetComponent<Animator>().SetBool("Choque", false);
-            }
+            GetComponent<Animator>().SetBool("Choque", false);
         }
     }
 }

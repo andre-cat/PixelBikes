@@ -9,19 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a337f0d1b1e8b3d4ca939285c195bea4, type: 3}
+  m_Script: {fileID: 11500000, guid: 658babd38ec94e4488d02033848a2a8d, type: 3}
   m_Name: Personajes
   m_EditorClassIdentifier: 
   contenedor:
-  - nombre: Chris
-    avatar: {fileID: 21300000, guid: 8cb04068bdb384448a96ac889f616ef9, type: 3}
-    objeto: {fileID: 5442954787589750300, guid: 1182e6f2d7c061c419f5cdf1352e2b1d,
-      type: 3}
-  - nombre: Mutant Chris
-    avatar: {fileID: 21300000, guid: 026027d9f860e6140b0845c46e8a0ab1, type: 3}
-    objeto: {fileID: 7033862977142847966, guid: 2026ae587cbc3354ba249b319e56f48d,
-      type: 3}
-  - nombre: Chris B&W
-    avatar: {fileID: 21300000, guid: 194155e3fc4c1d64188073f2e034a281, type: 3}
-    objeto: {fileID: 3714521403608918136, guid: b517e6d80aa05e143b0115d84b7eb6dd,
-      type: 3}
+  - {fileID: 11400000, guid: 4cc5677d6ad089949938af83ba889313, type: 2}
+  - {fileID: 11400000, guid: 31c3b11809e967f48a31e6ac2057e39c, type: 2}
+  - {fileID: 11400000, guid: 09b3473c04f82264abbe458964d491ab, type: 2}

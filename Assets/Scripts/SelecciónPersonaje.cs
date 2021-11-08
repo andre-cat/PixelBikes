@@ -1,13 +1,23 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class SelecciónPersonaje : MonoBehaviour
 {
-    public ContenedorPersonaje personajes;
+    public enum TipoAnimación
+    {
+        Transición,
+        GameOver,
+    }
+
+    public ContenedorPersonajes personajes;
 
     public SpriteRenderer avatar;
     public TMP_Text nombre;
-    public GameObject objeto;
+    public Image fondo;
+    public TMP_Text título;
+    public GameObject animación;
+    public TipoAnimación tipo_animación;
 
     private int selección = 0;
 
@@ -27,7 +37,7 @@ public class SelecciónPersonaje : MonoBehaviour
     public void elegir_siguiente()
     {
         selección++;
-        if (selección >= personajes.número_personajes)
+        if (selección >= personajes.número)
         {
             selección = 0;
         }
@@ -38,10 +48,9 @@ public class SelecciónPersonaje : MonoBehaviour
     public void elegir_anterior()
     {
         selección--;
-
         if (selección < 0)
         {
-            selección = personajes.número_personajes - 1;
+            selección = personajes.número - 1;
         }
         actualizar_selección(selección);
         guardar_selección();
@@ -54,10 +63,39 @@ public class SelecciónPersonaje : MonoBehaviour
 
     private void actualizar_selección(int selección)
     {
-        Personaje personaje = personajes.obtener_personaje(selección);
-        avatar.sprite = personaje.avatar;
-        nombre.text = personaje.nombre;
-        objeto = personaje.objeto;
+        Personaje personaje = personajes.personaje(selección);
+
+        if (avatar != null)
+        {
+            avatar.sprite = personaje.avatar;
+        }
+
+        if (nombre != null)
+        {
+            nombre.text = personaje.nombre;
+        }
+
+        if (fondo != null)
+        {
+            fondo.color = new Color(personaje.fondo.r, personaje.fondo.g, personaje.fondo.b, 1);
+        }
+
+        if (título != null)
+        {
+            título.color = new Color(personaje.título.r, personaje.título.g, personaje.título.b, 1);
+        }
+
+        if (animación != null)
+        {
+            if (tipo_animación == TipoAnimación.Transición)
+            {
+                GameObject transición = Instantiate(personaje.transición, animación.transform.position, Quaternion.identity, animación.transform);
+            }
+            else
+            {
+                GameObject muerte = Instantiate(personaje.muerte, animación.transform.position, Quaternion.identity, animación.transform);
+            }
+        }
     }
 
     private void guardar_selección()

@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class MovimientoJugador : MonoBehaviour
 {
-
     private float velocidad = 100;
     private Rigidbody2D cuerpo;
 
-    private void Start()
+    void Start()
     {
         cuerpo = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    void FixedUpdate()
     {
         arriba();
         abajo();
@@ -22,7 +21,7 @@ public class MovimientoJugador : MonoBehaviour
         if (Input.GetKey("up"))
         {
             float y = velocidad * Time.deltaTime * Controlador.factor();
-            cuerpo.AddForce(new Vector2(0, y), ForceMode2D.Impulse);
+            cuerpo.AddForce(new Vector2(0, +y), ForceMode2D.Impulse);
         }
     }
 
@@ -33,5 +32,11 @@ public class MovimientoJugador : MonoBehaviour
             float y = velocidad * Time.deltaTime * Controlador.factor();
             cuerpo.AddForce(new Vector2(0, -y), ForceMode2D.Impulse);
         }
+    }
+
+    private void morir()
+    {
+        PlayerPrefs.SetFloat("dificultad", 0);
+        FindObjectOfType<CargadorNivel>().muerte();
     }
 }

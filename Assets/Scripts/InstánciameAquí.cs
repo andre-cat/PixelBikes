@@ -1,12 +1,13 @@
 using UnityEngine;
+using TMPro;
 
 public class InstánciameAquí : MonoBehaviour
 {
-    public ContenedorPersonaje contenedor;
+    public ContenedorObjetos jugadores;
 
-    private void Start()
+    void Start()
     {
-        GameObject objeto = contenedor.obtener_personaje(PlayerPrefs.GetInt("Avatar")).objeto;
-        objeto = Instantiate(objeto, this.transform.position, Quaternion.identity,this.transform);
+        GameObject objeto = jugadores.objeto(PlayerPrefs.GetInt("Avatar"));
+        objeto = Instantiate(objeto, this.transform.position, Quaternion.identity, this.transform);
     }
 }

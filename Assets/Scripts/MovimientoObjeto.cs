@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class MovimientoObjeto : MonoBehaviour
 {
-    public float velocidad = 7000;
+    public float velocidad = 12000;
     private Rigidbody2D objeto;
+    public Vector2 dirección;
 
-    private void Start()
+    void Start()
     {
         objeto = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    void FixedUpdate()
     {
-        Vector2 dirección = new Vector2(-1, 0);
         objeto.velocity = dirección * velocidad * Time.deltaTime * Controlador.factor();
     }
 }

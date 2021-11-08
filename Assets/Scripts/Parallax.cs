@@ -2,14 +2,12 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    // xot is called before the first frame update
     private float longitud, limite_inferior_camara, limite_superior_camara, coordenada_final;
     public float Efecto_Parallax;
     public float retorno;
 
     void Start()
     {
-        // Longitud del fondo.
         longitud = GetComponent<SpriteRenderer>().bounds.size.x;
 
         float distancia = Mathf.Abs(Camera.main.ScreenToWorldPoint(Vector2.zero).x - Camera.main.transform.position.x);
@@ -18,10 +16,8 @@ public class Parallax : MonoBehaviour
         limite_superior_camara = Camera.main.transform.position.x + distancia;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        
         {
             efecto_parallax();
         }

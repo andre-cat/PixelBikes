@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a60fe5301ccfd4a8bafdf6b28c60b6, type: 3}
+  m_Name: Mutant
+  m_EditorClassIdentifier: 
+  nombre: Mutant Chris
+  avatar: {fileID: 21300000, guid: 026027d9f860e6140b0845c46e8a0ab1, type: 3}
+  fondo: {r: 0, g: 0.47971648, b: 0.764151, a: 1}
+  "t\xEDtulo": {r: 0.81960785, g: 0.7176471, b: 0, a: 1}
+  "transici\xF3n": {fileID: 2419239383861764509, guid: de1acb4e6041e1e4fa18851cd74beee2,
+    type: 3}
+  muerte: {fileID: 7911873607089294479, guid: ba81bd7f871078143938d9b8f05db530, type: 3}

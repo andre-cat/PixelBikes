@@ -30,7 +30,7 @@ AnimationClip:
     - time: 0.06666667
       value: {fileID: 21300008, guid: db0a3687d67e82d448d3a39b0d09e2c2, type: 3}
     attribute: m_Sprite
-    path: 
+    path: Imagen
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -41,7 +41,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 2226509701
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -77,4 +77,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.06666667
+    functionName: roca
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

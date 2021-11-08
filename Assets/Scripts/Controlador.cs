@@ -2,11 +2,22 @@ using UnityEngine;
 
 public class Controlador : MonoBehaviour
 {
-    public static float dificultad = 10;
+    void Start()
+    {
+        predeterminado();
+    }
+
+    public static void predeterminado()
+    {
+        PlayerPrefs.SetInt("vida", 100);
+        PlayerPrefs.SetInt("nivel", 1);
+        PlayerPrefs.SetFloat("dificultad", 1);
+        PlayerPrefs.SetFloat("tiempo", 30);
+    }
 
     public static float factor()
     {
-        float reducción = (10 * dificultad) / 100;
-        return reducción;
+        float factor = PlayerPrefs.GetFloat("dificultad", 1);
+        return factor;
     }
 }
