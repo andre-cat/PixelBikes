@@ -6,7 +6,6 @@ public class AnimaciónRoca : MonoBehaviour
     {
         if (colisión.gameObject.tag == "Enemigo")
         {
-            Debug.Log("Holi");
             colisión.gameObject.GetComponent<Animator>().SetTrigger("Explotar");
         }
     }

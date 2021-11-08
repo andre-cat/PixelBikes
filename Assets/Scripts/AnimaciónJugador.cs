@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class AnimaciónJugador : MonoBehaviour
 {
@@ -23,40 +22,21 @@ public class AnimaciónJugador : MonoBehaviour
     void Update()
     {
         arriba_abajo();
+
         corazón();
         cambiar_color(1f);
+
         burbuja();
-        activar_colisionador(20);
+        if (contar == true)
+        { 
+        activar_colisionador(10);
+        }
     }
 
     private void arriba_abajo()
     {
         jugador.SetBool("Subir", Input.GetKey("up"));
         jugador.SetBool("Bajar", Input.GetKey("down"));
-    }
-
-    private void corazón()
-    {
-        if (PlayerPrefs.GetInt("corazones") > 0 & Input.GetKeyDown(KeyCode.V))
-        {
-            PlayerPrefs.SetInt("corazones", PlayerPrefs.GetInt("corazones") - 1);
-            PlayerPrefs.SetInt("vida", 100);
-            instante_inicial_v = Time.time;
-            color_blanco = true;
-        }
-    }
-
-    private void burbuja()
-    {
-        if (PlayerPrefs.GetInt("burbujas") > 0 & Input.GetKeyDown(KeyCode.B))
-        {
-            PlayerPrefs.SetInt("burbujas", PlayerPrefs.GetInt("burbujas") - 1);
-            GetComponent<CircleCollider2D>().enabled = false;
-            GameObject.FindWithTag("Polvo").SetActive(false);
-            GameObject.FindWithTag("Burbuja").GetComponent<SpriteRenderer>().enabled = true;
-            instante_inicial_b = Time.time;
-            contar = true;
-        }
     }
 
     private void daño(int valor_daño)
@@ -96,6 +76,17 @@ public class AnimaciónJugador : MonoBehaviour
         }
     }
 
+private void corazón()
+    {
+        if (PlayerPrefs.GetInt("corazones") > 0 & Input.GetKeyDown(KeyCode.V))
+        {
+            PlayerPrefs.SetInt("corazones", PlayerPrefs.GetInt("corazones") - 1);
+            PlayerPrefs.SetInt("vida", 100);
+            instante_inicial_v = Time.time;
+            color_blanco = true;
+        }
+    }
+
     private void cambiar_color(float segundos)
     {
         if (color_blanco == true)
@@ -122,17 +113,27 @@ public class AnimaciónJugador : MonoBehaviour
         }
     }
 
+  private void burbuja()
+    {
+        if (PlayerPrefs.GetInt("burbujas") > 0 & Input.GetKeyDown(KeyCode.B))
+        {
+            PlayerPrefs.SetInt("burbujas", PlayerPrefs.GetInt("burbujas") - 1);
+            GetComponent<CircleCollider2D>().enabled = false;
+            GameObject.FindWithTag("Polvo").SetActive(false);
+            GameObject.FindWithTag("Burbuja").GetComponent<SpriteRenderer>().enabled = true;
+            instante_inicial_b = Time.time;
+            contar = true;
+        }
+    }
+
     private void activar_colisionador(float segundos)
     {
-        if (contar == true)
-        {
             if (Time.time - instante_inicial_b >= segundos)
             {
-                GetComponent<CircleCollider2D>().enabled = false;
                 GameObject.FindWithTag("Burbuja").GetComponent<SpriteRenderer>().enabled = false;
                 GameObject.FindWithTag("Polvo").SetActive(true);
+                GetComponent<CircleCollider2D>().enabled = true;
                 contar = false;
             }
-        }
     }
 }

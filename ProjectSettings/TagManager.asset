@@ -13,6 +13,9 @@ TagManager:
   - Enemigo
   - Roca
   - Burbuja
+  - Polvo
+  - "M\xFAsica"
+  - Pausa
   layers:
   - Default
   - TransparentFX

@@ -48,7 +48,7 @@ public class CargadorNivel : MonoBehaviour
 
     public void trans()
     {
-        if (SceneManager.GetActiveScene().name != "Nivel_3")
+        if (SceneManager.GetActiveScene().name != "NIVEL_3")
         {
             StartCoroutine(cargar_escena("TRANS", 3));
         }

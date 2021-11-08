@@ -638,6 +638,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icono
       objectReference: {fileID: 0}
+    - target: {fileID: 4698159231496179141, guid: 31c3e9697495d944f978a68dd946e09c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6420805247054010033, guid: 31c3e9697495d944f978a68dd946e09c,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -837,6 +842,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068220517516324122, guid: 31c3e9697495d944f978a68dd946e09c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31c3e9697495d944f978a68dd946e09c, type: 3}

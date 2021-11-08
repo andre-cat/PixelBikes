@@ -1,16 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Audio : MonoBehaviour
 {
-    public static Audio audio;
+    public static Audio música;
+    public AudioSource fuente_audio;
 
     void Awake()
     {
-        if (audio == null)
+        if (música == null)
         {
-            Audio.audio = this;
+            Audio.música = this;
+            DontDestroyOnLoad(gameObject);
+            fuente_audio = GetComponent<AudioSource>();
         }
         else
         {
@@ -18,7 +19,8 @@ public class Audio : MonoBehaviour
         }
     }
 
-    public void pausar(){
-        
+    void Start()
+    {
+        fuente_audio.volume = PlayerPrefs.GetFloat("volumen", 0.1f);
     }
 }
