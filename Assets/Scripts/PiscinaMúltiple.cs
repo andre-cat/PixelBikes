@@ -5,7 +5,7 @@ public class PiscinaMúltiple : MonoBehaviour
     public ContenedorObjetos contenedor;
 
     public int cantidad = 2;
-    public static float iniciar_en = 4;
+    public static int iniciar_en = 4;
     public int instanciar_cada = 2;
     public GameObject punto_2;
     public GameObject punto_4;

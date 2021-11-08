@@ -12,10 +12,7 @@ TagManager:
   - "Lim\xF3n"
   - Enemigo
   - Roca
-  - "Obst\xE1culos"
-  - Limones
-  - Cubierta
-  - Progreso
+  - Burbuja
   layers:
   - Default
   - TransparentFX
@@ -23,7 +20,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Elementos
+  - 
   - 
   - 
   - 
@@ -50,9 +47,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Luna
+    uniqueID: 2520328755
+    locked: 0
+  - name: Otros
+    uniqueID: 789549817
+    locked: 0
+  - name: Camino
+    uniqueID: 148539317
+    locked: 0
+  - name: Enemigo
+    uniqueID: 2760292553
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Top
-    uniqueID: 789549817
+  - name: New Layer
+    uniqueID: 1885612343
     locked: 0

@@ -27,7 +27,7 @@ public class Tienda : MonoBehaviour
 
     private void predeterminado()
     {
-        limones = PlayerPrefs.GetInt("limones", 0);
+        limones = PlayerPrefs.GetInt("limones",0);
         corazones = PlayerPrefs.GetInt("corazones", 0);
         burbujas = PlayerPrefs.GetInt("burbujas", 0);
 
@@ -54,6 +54,7 @@ public class Tienda : MonoBehaviour
             if (limones > precio_corazones)
             {
                 limones -= precio_corazones;
+                PlayerPrefs.SetInt("limones", limones);
                 texto_limones.text = limones + "$";
 
                 corazones += 1;
@@ -62,7 +63,7 @@ public class Tienda : MonoBehaviour
                 texto_corazones.text = corazones.ToString();
                 barra_corazón.value = corazones;
                 mensaje.text = "¡Compra exitosa!";
-                StartCoroutine(esperar(mensaje, "c:"));
+                StartCoroutine(esperar(mensaje, "<3"));
             }
             else
             {
@@ -84,6 +85,7 @@ public class Tienda : MonoBehaviour
             if (limones > precio_burbujas)
             {
                 limones -= precio_burbujas;
+                PlayerPrefs.SetInt("limones", limones);
                 texto_limones.text = limones + "$";
 
                 burbujas += 1;

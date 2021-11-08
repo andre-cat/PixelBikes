@@ -48,7 +48,14 @@ public class CargadorNivel : MonoBehaviour
 
     public void trans()
     {
-        StartCoroutine(cargar_escena("TRANS", 3));
+        if (SceneManager.GetActiveScene().name != "Nivel_3")
+        {
+            StartCoroutine(cargar_escena("TRANS", 3));
+        }
+        else
+        {
+            StartCoroutine(cargar_escena("FINAL", 3));
+        }
     }
 
     public void salir()
@@ -60,7 +67,10 @@ public class CargadorNivel : MonoBehaviour
 
     private void cargar_escena(string nombre)
     {
-        GetComponent<Animator>().SetTrigger("Iniciar");
+        if (SceneManager.GetActiveScene().name != "MUERTE" & SceneManager.GetActiveScene().name != "FINAL")
+        {
+            GetComponent<Animator>().SetTrigger("Iniciar");
+        }
         SceneManager.LoadScene(nombre);
     }
 

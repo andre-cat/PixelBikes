@@ -70,11 +70,15 @@ public class MovimientoEnemigo : MonoBehaviour
     {
         PlayerPrefs.SetInt("limones", Texto.limones);
         PlayerPrefs.SetInt("nivel", PlayerPrefs.GetInt("nivel") + 1);
-        PlayerPrefs.SetFloat("tiempo", PlayerPrefs.GetFloat("tiempo") + 30f);
+        PlayerPrefs.SetFloat("tiempo", PlayerPrefs.GetFloat("tiempo") + 20f);
         PlayerPrefs.SetFloat("dificultad", PlayerPrefs.GetFloat("dificultad") + 0.25f);
         if (PiscinaMúltiple.iniciar_en - 1 > 1)
         {
             PiscinaMúltiple.iniciar_en--;
+        }
+        if (Piscina.instanciar_cada - 2 > 1)
+        {
+            PiscinaMúltiple.iniciar_en -= 2;
         }
         FindObjectOfType<CargadorNivel>().trans();
     }

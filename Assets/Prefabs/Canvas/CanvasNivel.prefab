@@ -186,8 +186,8 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 1
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 600, y: 400}
-  m_ScreenMatchMode: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 8966699103212406795}
   m_Layer: 5
   m_Name: Cubierta
-  m_TagString: Cubierta
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 7928771170423629680, guid: aee6fe1654a4c454f818b123b2442ad5,
         type: 3}
       propertyPath: m_TagString
-      value: Progreso
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8824537911921574008, guid: aee6fe1654a4c454f818b123b2442ad5,
         type: 3}
@@ -427,7 +427,7 @@ PrefabInstance:
     - target: {fileID: 8824537911921574008, guid: aee6fe1654a4c454f818b123b2442ad5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -230
+      value: -265
       objectReference: {fileID: 0}
     - target: {fileID: 8824537911921574008, guid: aee6fe1654a4c454f818b123b2442ad5,
         type: 3}
@@ -687,12 +687,12 @@ PrefabInstance:
     - target: {fileID: 6060389770235132295, guid: cede6978c4600c04a85f2a32e91d998a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -320.00003
+      value: -350
       objectReference: {fileID: 0}
     - target: {fileID: 6060389770235132295, guid: cede6978c4600c04a85f2a32e91d998a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -166.00003
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 6060389770235132295, guid: cede6978c4600c04a85f2a32e91d998a,
         type: 3}

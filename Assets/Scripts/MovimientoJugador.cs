@@ -36,7 +36,6 @@ public class MovimientoJugador : MonoBehaviour
 
     private void morir()
     {
-        PlayerPrefs.SetFloat("dificultad", 0);
         FindObjectOfType<CargadorNivel>().muerte();
     }
 }

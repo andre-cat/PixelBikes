@@ -3,8 +3,9 @@ using UnityEngine;
 public class Piscina : MonoBehaviour
 {
     public GameObject prefab;
-    public int brecha_instancia = 10;
     public int cantidad = 2;
+    public int iniciar_en = 2;
+    public static int instanciar_cada = 10;
     public GameObject punto_1;
     public GameObject punto_3;
     public GameObject punto_5;
@@ -13,7 +14,7 @@ public class Piscina : MonoBehaviour
     private void Start()
     {
         llenar_piscina();
-        InvokeRepeating("sacar_de_piscina", 2f, brecha_instancia);
+        InvokeRepeating("sacar_de_piscina", iniciar_en, instanciar_cada);
     }
 
     private void llenar_piscina()
@@ -36,7 +37,7 @@ public class Piscina : MonoBehaviour
         {
             CancelInvoke();
         }
-        
+
         GameObject objeto = null;
 
         for (int i = 0; i < transform.childCount; i++)

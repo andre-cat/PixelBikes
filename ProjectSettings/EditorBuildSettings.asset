@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Escenas/NIVEL_2.unity
     guid: 7a08d043afee066449f280d079a2d920
   - enabled: 1
+    path: Assets/Escenas/NIVEL_3.unity
+    guid: d7137918f8d535f4a89a695b608c8a01
+  - enabled: 1
     path: Assets/Escenas/AVATAR.unity
     guid: 40c1d0c9559ca8448a627ab95378acab
   - enabled: 1
@@ -29,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/MUERTE.unity
     guid: bcc07c1531eb0fb4e8f7d32a0cc3dc61
+  - enabled: 1
+    path: Assets/Escenas/FINAL.unity
+    guid: cd5bac54595a3404ba142f79ca821f46
   m_configObjects: {}

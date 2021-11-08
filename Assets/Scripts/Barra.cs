@@ -40,6 +40,7 @@ public class Barra : MonoBehaviour
             deslizador.value = PlayerPrefs.GetInt("vida");
             if (CargadorNivel.over == false & deslizador.value <= 0)
             {
+                PlayerPrefs.SetFloat("dificultad", 0);
                 GameObject.FindWithTag("Player").GetComponent<Animator>().SetTrigger("Morir");
                 CargadorNivel.over = true;
             }
@@ -52,7 +53,7 @@ public class Barra : MonoBehaviour
             {
                 MovimientoEnemigo.mitad = true;
 
-                if (deslizador.value >= deslizador.maxValue * 0.75)
+                if (deslizador.value >= deslizador.maxValue * 0.85)
                 {
                     MovimientoEnemigo.final = true;
 
