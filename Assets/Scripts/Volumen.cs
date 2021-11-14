@@ -7,30 +7,17 @@ public class Volumen : MonoBehaviour
 
     void Start()
     {
-        if (!PlayerPrefs.HasKey("volumen"))
-        {
-            PlayerPrefs.SetFloat("volumen", 0.1f);
-            cargar();
-        }
-        else
-        {
-            cargar();
-        }
+        barra_volumen.value = PlayerPrefs.GetFloat("volumen");
+    }
+
+    void update()
+    {
+        cambiar_volumen();
     }
 
     public void cambiar_volumen()
     {
-        AudioListener.volume = barra_volumen.value;
-        guardar();
-    }
-
-    private void cargar()
-    {
-        barra_volumen.value = PlayerPrefs.GetFloat("volumen");
-    }
-
-    private void guardar()
-    {
-        PlayerPrefs.SetFloat("volumen", barra_volumen.value);
+        Música.fuente_audio.volume = barra_volumen.value;
+        PlayerPrefs.SetFloat("volumen",barra_volumen.value);
     }
 }

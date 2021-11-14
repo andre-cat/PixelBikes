@@ -95,10 +95,11 @@ GameObject:
   - component: {fileID: 6547224862936704770}
   - component: {fileID: 4952927628942061350}
   - component: {fileID: 8138503947448768434}
-  - component: {fileID: 3835729806037825931}
+  - component: {fileID: 468674539001496285}
+  - component: {fileID: -5283200225634480412}
   m_Layer: 0
   m_Name: AceiteGrande
-  m_TagString: Destructible-Ofensivo
+  m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,8 +187,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05811b7aa74b0be4698c58ff728c5042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidad: 12000
   "direcci\xF3n": {x: -1, y: 0}
---- !u!114 &3835729806037825931
+--- !u!114 &468674539001496285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4952927628942061351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5eb6fb8a7ee7a46a0cbbe55d3e69d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombre: aceite
+  "da\xF1o": 1
+  destruible: 0
+--- !u!114 &-5283200225634480412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,3 +216,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180075d78ef26fd47a8218764183356b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "obst\xE1culo": {fileID: 0}

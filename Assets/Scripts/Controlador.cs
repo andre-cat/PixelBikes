@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class Controlador : MonoBehaviour
 {
+    public static bool over;
+
     void Start()
     {
+        over = false;
         predeterminado();
     }
 

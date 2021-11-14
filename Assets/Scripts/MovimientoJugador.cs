@@ -36,6 +36,6 @@ public class MovimientoJugador : MonoBehaviour
 
     private void morir()
     {
-        FindObjectOfType<CargadorNivel>().muerte();
+       // FindObjectOfType<CargadorEscena>().muerte();
     }
 }

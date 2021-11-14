@@ -4,10 +4,13 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - personajes: {fileID: 11400000, guid: 5c4a6b5e5bef47841b02c56ab2a1dabe, type: 2}
-  - avatar: {instanceID: 0}
-  - nombre: {instanceID: 0}
+  - personajes: {fileID: 11400000, guid: 7541d16c029e2e249b90fcf91e8316b7, type: 2}
   - objeto: {instanceID: 0}
+  - nombre: {instanceID: 0}
+  - avatar: {instanceID: 0}
+  - fondo: {instanceID: 0}
+  - "t\xEDtulo": {instanceID: 0}
+  - "animaci\xF3n": {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

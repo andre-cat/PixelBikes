@@ -4,18 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Indestructible-Inofensivo
-  - Indestructible-Ofensivo
-  - Destructible-Inofensivo
-  - Destructible-Ofensivo
-  - Rampa
   - "Lim\xF3n"
   - Enemigo
   - Roca
-  - Burbuja
-  - Polvo
-  - "M\xFAsica"
-  - Pausa
   layers:
   - Default
   - TransparentFX

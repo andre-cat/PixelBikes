@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a60fe5301ccfd4a8bafdf6b28c60b6, type: 3}
+  m_Name: Normal
+  m_EditorClassIdentifier: 
+  objeto: {fileID: 2279578292922092459, guid: aa6bb9821165b284f92d3ccc118c3753, type: 3}
+  nombre: Chris
+  avatar: {fileID: 21300000, guid: 8cb04068bdb384448a96ac889f616ef9, type: 3}
+  fondo: {r: 1, g: 1, b: 0, a: 1}
+  "t\xEDtulo": {r: 0.4928001, g: 0.19971518, b: 0.8301887, a: 1}
+  "transici\xF3n": {fileID: 5255106785630453507, guid: c5e17a1872248034db0e4deaf4ae10f5,
+    type: 3}
+  muerte: {fileID: 649691041350376162, guid: 116b67ad119468f4faa1162c21e89cb0, type: 3}

@@ -16,7 +16,6 @@ public class AnimaciónJugador : MonoBehaviour
     {
         jugador = GetComponent<Animator>();
         enemigo = GameObject.FindWithTag("Enemigo").GetComponent<Animator>();
-        Texto.limones = PlayerPrefs.GetInt("limones", 0);
     }
 
     void Update()
@@ -28,8 +27,8 @@ public class AnimaciónJugador : MonoBehaviour
 
         burbuja();
         if (contar == true)
-        { 
-        activar_colisionador(10);
+        {
+            activar_colisionador(10);
         }
     }
 
@@ -46,37 +45,10 @@ public class AnimaciónJugador : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D colisión)
     {
-        switch (colisión.tag)
-        {
-            case "Limón":
-                colisión.GetComponent<Animator>().SetTrigger("Choque");
-                Texto.limones++;
-                break;
-            case "Destructible-Ofensivo":
-                if (colisión.name == "Barril")
-                {
-                    jugador.SetTrigger("Resbalar");
-                    enemigo.SetTrigger("Risa");
-                    daño(30);
-                }
-                else
-                {
-                    jugador.SetTrigger("Contacto");
-                    daño(10);
-                }
-                break;
-            case "Indestructible-Ofensivo":
-                jugador.SetTrigger("Resbalar");
-                enemigo.SetTrigger("Risa");
-                daño(20);
-                break;
-            case "Rampa":
-                jugador.SetTrigger("Saltar");
-                break;
-        }
+        
     }
 
-private void corazón()
+    private void corazón()
     {
         if (PlayerPrefs.GetInt("corazones") > 0 & Input.GetKeyDown(KeyCode.V))
         {
@@ -113,14 +85,14 @@ private void corazón()
         }
     }
 
-  private void burbuja()
+    private void burbuja()
     {
         if (PlayerPrefs.GetInt("burbujas") > 0 & Input.GetKeyDown(KeyCode.B))
         {
             PlayerPrefs.SetInt("burbujas", PlayerPrefs.GetInt("burbujas") - 1);
             GetComponent<CircleCollider2D>().enabled = false;
-            GameObject.FindWithTag("Polvo").SetActive(false);
-            GameObject.FindWithTag("Burbuja").GetComponent<SpriteRenderer>().enabled = true;
+            gameObject.transform.Find("Polvo").gameObject.SetActive(false);
+            gameObject.transform.Find("Burbuja").gameObject.SetActive(true);
             instante_inicial_b = Time.time;
             contar = true;
         }
@@ -128,12 +100,12 @@ private void corazón()
 
     private void activar_colisionador(float segundos)
     {
-            if (Time.time - instante_inicial_b >= segundos)
-            {
-                GameObject.FindWithTag("Burbuja").GetComponent<SpriteRenderer>().enabled = false;
-                GameObject.FindWithTag("Polvo").SetActive(true);
-                GetComponent<CircleCollider2D>().enabled = true;
-                contar = false;
-            }
+        if (Time.time - instante_inicial_b >= segundos)
+        {
+            GetComponent<CircleCollider2D>().enabled = true;
+            gameObject.transform.Find("Polvo").gameObject.SetActive(true);
+            gameObject.transform.Find("Burbuja").gameObject.SetActive(false);
+            contar = false;
+        }
     }
 }

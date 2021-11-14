@@ -45,7 +45,7 @@ public class PiscinaMúltiple : MonoBehaviour
 
     private GameObject sacar_de_piscina()
     {
-        if (CargadorNivel.over == true)
+        if (Controlador.over == true)
         {
             CancelInvoke();
         }

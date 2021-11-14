@@ -38,11 +38,13 @@ public class Barra : MonoBehaviour
         if (tipo_barra == TipoBarra.Vida)
         {
             deslizador.value = PlayerPrefs.GetInt("vida");
-            if (CargadorNivel.over == false & deslizador.value <= 0)
+            if (Controlador.over == false & deslizador.value <= 0)
             {
                 PlayerPrefs.SetFloat("dificultad", 0);
                 GameObject.FindWithTag("Player").GetComponent<Animator>().SetTrigger("Morir");
-                CargadorNivel.over = true;
+                GameObject.FindWithTag("Player").transform.Find("Polvo").gameObject.SetActive(false);
+                GameObject.FindWithTag("Player").transform.Find("Bicicleta").gameObject.SetActive(true);
+                Controlador.over = true;
             }
         }
         else
@@ -57,10 +59,10 @@ public class Barra : MonoBehaviour
                 {
                     MovimientoEnemigo.final = true;
 
-                    if (CargadorNivel.over == false & deslizador.value >= deslizador.maxValue)
+                    if (Controlador.over == false & deslizador.value >= deslizador.maxValue)
                     {
                         GameObject.FindWithTag("Enemigo").GetComponent<Animator>().SetTrigger("Despedida");
-                        CargadorNivel.over = true;
+                        Controlador.over = true;
                     }
                 }
             }

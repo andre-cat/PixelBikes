@@ -26,7 +26,7 @@ public class Texto : MonoBehaviour
         switch (conteo)
         {
             case TipoConteo.Limones:
-                if (CargadorNivel.over == false)
+                if (Controlador.over == false)
                 {
                     texto.text = limones.ToString();
                 }

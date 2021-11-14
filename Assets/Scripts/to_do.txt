@@ -1,0 +1,4 @@
+[-] Corregir error de submenú pausa.
+[-] Corregir error de cambio de volumen.
+[-] Hacer transiciones negras suaves entre escenas.
+[] Crear clase "Obstáculo".

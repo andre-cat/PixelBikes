@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a60fe5301ccfd4a8bafdf6b28c60b6, type: 3}
   m_Name: B&W
   m_EditorClassIdentifier: 
-  nombre: B&W Chris
+  objeto: {fileID: 8931586892726594580, guid: 2e9b3dfd069396148a2c6f278c445c2e, type: 3}
+  nombre: B&W
   avatar: {fileID: 21300000, guid: 194155e3fc4c1d64188073f2e034a281, type: 3}
   fondo: {r: 0.13725491, g: 0.8901961, b: 1, a: 1}
   "t\xEDtulo": {r: 0.8117647, g: 0, b: 0.9137255, a: 1}

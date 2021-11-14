@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class MovimientoEnemigo : MonoBehaviour
 {
@@ -61,7 +60,7 @@ public class MovimientoEnemigo : MonoBehaviour
         }
     }
 
-    private void roca()
+    private void activar_roca()
     {
         GameObject.FindWithTag("Roca").GetComponent<MovimientoObjeto>().enabled = true;
     }
@@ -80,6 +79,6 @@ public class MovimientoEnemigo : MonoBehaviour
         {
             PiscinaMúltiple.iniciar_en -= 2;
         }
-        FindObjectOfType<CargadorNivel>().trans();
+      //  FindObjectOfType<CargadorEscena>().trans();
     }
 }

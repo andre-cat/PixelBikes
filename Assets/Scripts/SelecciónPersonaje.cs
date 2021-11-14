@@ -12,8 +12,9 @@ public class SelecciónPersonaje : MonoBehaviour
 
     public ContenedorPersonajes personajes;
 
-    public SpriteRenderer avatar;
+    public GameObject objeto;
     public TMP_Text nombre;
+    public SpriteRenderer avatar;
     public Image fondo;
     public TMP_Text título;
     public GameObject animación;
@@ -87,6 +88,7 @@ public class SelecciónPersonaje : MonoBehaviour
 
         if (animación != null)
         {
+            animación.GetComponent<Image>().enabled = false;
             if (tipo_animación == TipoAnimación.Transición)
             {
                 GameObject transición = Instantiate(personaje.transición, animación.transform.position, Quaternion.identity, animación.transform);
@@ -95,6 +97,10 @@ public class SelecciónPersonaje : MonoBehaviour
             {
                 GameObject muerte = Instantiate(personaje.muerte, animación.transform.position, Quaternion.identity, animación.transform);
             }
+        }
+
+        if (objeto != null){
+            GameObject objeto_juego = Instantiate(personaje.objeto, objeto.transform.position, Quaternion.identity, objeto.transform);
         }
     }
 

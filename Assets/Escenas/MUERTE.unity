@@ -758,9 +758,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ace5e73411b6f3e4a98a27814570f7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personajes: {fileID: 11400000, guid: 5c4a6b5e5bef47841b02c56ab2a1dabe, type: 2}
-  avatar: {fileID: 0}
+  personajes: {fileID: 11400000, guid: 7541d16c029e2e249b90fcf91e8316b7, type: 2}
+  objeto: {fileID: 0}
   nombre: {fileID: 0}
+  avatar: {fileID: 0}
   fondo: {fileID: 0}
   "t\xEDtulo": {fileID: 0}
   "animaci\xF3n": {fileID: 1168906216}
